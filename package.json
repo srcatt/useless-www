@@ -1,0 +1,36 @@
+{
+	"name": "useless-www",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prettify": "prettier --write ."
+	},
+	"dependencies": {
+		"@mdi/js": "^7.2.96",
+		"@mdi/react": "^1.6.1",
+		"@studio-freight/lenis": "^1.0.13",
+		"@types/node": "20.2.5",
+		"@types/react": "18.2.7",
+		"@types/react-dom": "18.2.4",
+		"autoprefixer": "10.4.14",
+		"eslint": "8.41.0",
+		"eslint-config-next": "13.4.4",
+		"gsap": "^3.11.5",
+		"next": "13.4.4",
+		"postcss": "8.4.24",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-locomotive-scroll": "^0.2.2",
+		"sass": "^1.62.1",
+		"tailwindcss": "3.3.2",
+		"typescript": "5.0.4"
+	},
+	"devDependencies": {
+		"@types/locomotive-scroll": "^4.1.0",
+		"prettier": "^2.8.8"
+	}
+}
