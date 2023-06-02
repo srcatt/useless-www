@@ -3,22 +3,28 @@
 @tailwind utilities;
 
 :root {
-	--useless-bg: #35f;
-	--useless-bg-dark: rgb(0, 41, 153);
+	--useless-blue: #35f;
+	--useless-blue-dark: rgb(0, 41, 153);
+	--useless-green: #0f8;
+	--useless-green-light: rgb(97, 255, 181);
 	--useless-gray: #141414;
+	--useless-fg: #fff;
 
 	--gap: 2rem;
 	--header-height: 6rem;
+	--nav-full-h: calc(100vh - var(--header-height));
 
 	font-size: 64%;
 }
 
 body {
-	background: var(--useless-bg);
+	background: var(--useless-gray);
+	color: var(--useless-fg);
 }
 
-.section {
-	padding: var(--gap) 0;
+section {
+	display: inline-block;
+	width: 100%;
 }
 
 .main-wrapper {
@@ -26,6 +32,18 @@ body {
 	position: relative;
 }
 
-main {
-	padding: var(--gap);
+.blink {
+	animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

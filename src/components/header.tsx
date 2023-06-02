@@ -10,12 +10,10 @@ export default function Header(
 		<header {...props} className={`${props.className} ${styles.header}`}>
 			<Link href="/" className={styles.headerButton} data-bigicon>
 				<MdiIcon path={mdiTrashCan} color="currentColor" />
-				project
-				<br />
 				useless
 			</Link>
 			<div className="grow" />
-			<Link href="/" className={styles.headerButton}>
+			<Link href="/" className={styles.headerLink}>
 				projects
 			</Link>
 		</header>

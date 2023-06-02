@@ -1,10 +1,10 @@
 import styles from '@/styles/home.module.scss';
-import { Poppins, DM_Sans } from 'next/font/google';
+import { Manrope } from 'next/font/google';
 import Header from '@/components/header';
 import { useEffect, useRef } from 'react';
 import Lenis from '@studio-freight/lenis';
 
-const dmSans = DM_Sans({ subsets: ['latin'], weight: ['400'] });
+const manrope = Manrope({ subsets: ['latin'] });
 
 export default function Home() {
 	let mainRef = useRef(null);
@@ -18,15 +18,21 @@ export default function Home() {
 	}, []);
 	return (
 		<>
-			<Header className={dmSans.className} />
-			<div className={`${dmSans.className} main-wrapper`}>
+			<Header className={manrope.className} />
+			<div className={`${manrope.className} main-wrapper`}>
 				<main data-scroll-container="" ref={mainRef}>
-					<section className="h-screen grid grid-cols-1 md:grid-cols-2 xs:grid-cols-3 gap-section">
+					<section className={styles.hero}>
 						<h1 className={styles.heroTitle}>
-							A studio that focuses on developing nothing useful.
+							A studio that focuses on developing{' '}
+							<span className="blink">*nothing*</span> useful.
 						</h1>
+						<p className={styles.heroScroll}>Scroll.</p>
 					</section>
-					<section className="section"></section>
+					<section className={styles.topProjects}>
+						<div>
+							<h1>Projects</h1>
+						</div>
+					</section>
 				</main>
 			</div>
 		</>

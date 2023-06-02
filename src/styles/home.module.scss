@@ -1,6 +1,30 @@
-.heroTitle {
-	line-height: 0.7;
-	color: #fff;
+.hero {
+	position: relative;
+	min-height: 48rem;
 	text-transform: lowercase;
-	@apply text-[5.4rem] md:text-[9.4rem];
+	background: var(--useless-green);
+	color: var(--useless-gray);
+	line-height: 0.8;
+	@apply h-[var(--nav-full-h)] md:h-[70vh];
+}
+
+.heroTitle {
+	transform-origin: left bottom;
+	margin: var(--gap);
+	@apply text-[5.4rem] sm:text-[7rem] md:text-[9.4rem];
+}
+
+.heroScroll {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: var(--gap);
+	font-size: 4rem;
+}
+
+.topProjects {
+	line-height: 0.8;
+	h1 {
+		@apply text-[4rem] md:text-[5em];
+	}
 }
