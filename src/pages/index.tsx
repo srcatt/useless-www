@@ -1,8 +1,9 @@
 import styles from '@/styles/home.module.scss';
+import Page from '@/components/page';
 
 export default function Home() {
 	return (
-		<>
+		<Page>
 			<section className={styles.hero}>
 				<h1 className={styles.heroTitle}>
 					A studio that focuses on developing{' '}
@@ -15,6 +16,6 @@ export default function Home() {
 					<h1>Projects</h1>
 				</div>
 			</section>
-		</>
+		</Page>
 	);
 }

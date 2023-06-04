@@ -28,8 +28,12 @@ section {
 }
 
 .main-wrapper {
+	transition: margin 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 	@apply mt-[var(--header-height)] md:mt-0 md:mr-[var(--header-height)];
 	position: relative;
+	&[data-header='false'] {
+		@apply m-0;
+	}
 }
 
 .blink {
